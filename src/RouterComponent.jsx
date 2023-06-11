@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage";
 import About from "./components/About";
 import Services from "./components/Services";
 import NavbarComponent from "./components/Navbar";
+import GithubUsers from "./githubUsers";
 
 const RouterComponent = () => {
   const [currentPage, setCurrentPage] = useState("");
@@ -15,7 +16,8 @@ const RouterComponent = () => {
     <BrowserRouter>
       {currentPage === "/" ||
       currentPage === "/about" ||
-      currentPage === "/services" ? (
+      currentPage === "/services" ||
+      currentPage === "/githbUsers" ? (
         <NavbarComponent />
       ) : (
         <h1>Navbar not found</h1>
@@ -24,6 +26,7 @@ const RouterComponent = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/githubUsers" element={<GithubUsers />} />
         <Route
           path="*"
           element={

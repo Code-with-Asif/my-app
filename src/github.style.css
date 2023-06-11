@@ -1,0 +1,24 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.user{
+  
+ display: inline-block;
+ 
+  
+   
+}
+.userDetails{
+ 
+  width: 250px;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  
+}
+.userDetails img{
+  width: 100%;
+}
